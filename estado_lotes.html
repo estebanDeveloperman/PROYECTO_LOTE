@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+ <title>AYBAR - PROYECTOS</title>
+
+ <link
+ rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+ integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+ crossorigin="anonymous"
+ />
+
+ <style>
+ body {
+ margin: 0;
+ padding: 0;
+ }
+ 
+ .chart-wrapper {
+ width: 100%;
+ height: auto;
+ margin-bottom: 20px;
+ }
+ .tituloh1 {
+ margin-top: 15px;
+ margin-bottom: 30px !important;
+ }
+ 
+ .legend {
+ list-style: none;
+ padding: 0;
+ text-align: center;
+ font-size: 25px;
+ }
+ .legend li {
+ display: inline-block;
+ margin-right: 10px;
+ }
+ .legend li span {
+ display: inline-block;
+ width: 15px;
+ height: 15px;
+ margin-right: 5px;
+ border-radius: 50%;
+ }
+
+ .contenedor_grafico {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ }
+
+ .grafico {
+ width: 300px !important;
+ }
+ 
+ .fs17 {
+ font-size: 17px;
+ }
+ 
+ h1 {
+ margin-top: 20px
+ }
+ 
+ @media screen and (min-width: 1950px) {
+ body,
+ html {
+ margin: 0;
+ padding: 0;
+ height: 100%;
+ }
+ body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ }
+ 
+ h1 {
+ margin-top: -40px
+ }
+ }
+ 
+ </style>
+ </head>
+
+ <body>
+ <h1 class="text-center">GRUPO AYBAR - ESTADO DE LOTES POR PROYECTO</h1>
+ <ul class="legend">
+ <li><span style="background-color: #4CAF50"></span>Disponible</li>
+ <li><span style="background-color: #2196F3"></span>Vendido</li>
+ <li><span style="background-color: #FFC107"></span>Separado</li>
+ <li><span style="background-color: #F44336"></span>Bloqueado</li>
+ </ul>
+ <div class="contenedor_grafico">
+ <div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>LA RESERVA DE HUARAL</h5>
+<h6>
+T: <b class="fs17">3455</b>, D: <b class="fs17" style="color: #4CAF50">2517</b> <br>
+V: <b class="fs17" style="color: #2196F3">937</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my1Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>CIUDAD DIAGONAL</h5>
+<h6>
+T: <b class="fs17">2722</b>, D: <b class="fs17" style="color: #4CAF50">1735</b> <br>
+V: <b class="fs17" style="color: #2196F3">987</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my2Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>LAGOON CENTER</h5>
+<h6>
+T: <b class="fs17">1771</b>, D: <b class="fs17" style="color: #4CAF50">1569</b> <br>
+V: <b class="fs17" style="color: #2196F3">202</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my3Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>JUMEIRAH LAKE</h5>
+<h6>
+T: <b class="fs17">1901</b>, D: <b class="fs17" style="color: #4CAF50">1296</b> <br>
+V: <b class="fs17" style="color: #2196F3">605</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my4Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>PLANICIE DE HUARAL</h5>
+<h6>
+T: <b class="fs17">2182</b>, D: <b class="fs17" style="color: #4CAF50">816</b> <br>
+V: <b class="fs17" style="color: #2196F3">1366</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my5Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>LACHAY VIEW</h5>
+<h6>
+T: <b class="fs17">2031</b>, D: <b class="fs17" style="color: #4CAF50">745</b> <br>
+V: <b class="fs17" style="color: #2196F3">1286</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my6Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>GREEN VIEW</h5>
+<h6>
+T: <b class="fs17">818</b>, D: <b class="fs17" style="color: #4CAF50">532</b> <br>
+V: <b class="fs17" style="color: #2196F3">286</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my7Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>VILLA ENCANTADA</h5>
+<h6>
+T: <b class="fs17">588</b>, D: <b class="fs17" style="color: #4CAF50">498</b> <br>
+V: <b class="fs17" style="color: #2196F3">2</b>, S: <b class="fs17" style="color: #FFC107">5</b>, B : <b class="fs17" style="color: #F44336">83</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my8Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>VILLA PRIVADA COSTA VERDE</h5>
+<h6>
+T: <b class="fs17">604</b>, D: <b class="fs17" style="color: #4CAF50">496</b> <br>
+V: <b class="fs17" style="color: #2196F3">1</b>, S: <b class="fs17" style="color: #FFC107">23</b>, B : <b class="fs17" style="color: #F44336">84</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my9Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>VILLA DEL PALMAR</h5>
+<h6>
+T: <b class="fs17">580</b>, D: <b class="fs17" style="color: #4CAF50">469</b> <br>
+V: <b class="fs17" style="color: #2196F3">2</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">109</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my10Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>VILLA PRIVADA VIDANTA</h5>
+<h6>
+T: <b class="fs17">498</b>, D: <b class="fs17" style="color: #4CAF50">424</b> <br>
+V: <b class="fs17" style="color: #2196F3">0</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">74</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my11Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>VILLA PRIVADA BALANDRA </h5>
+<h6>
+T: <b class="fs17">475</b>, D: <b class="fs17" style="color: #4CAF50">410</b> <br>
+V: <b class="fs17" style="color: #2196F3">0</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">65</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my12Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>VILLA PORTON </h5>
+<h6>
+T: <b class="fs17">400</b>, D: <b class="fs17" style="color: #4CAF50">306</b> <br>
+V: <b class="fs17" style="color: #2196F3">94</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my13Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>LA CALERA</h5>
+<h6>
+T: <b class="fs17">1235</b>, D: <b class="fs17" style="color: #4CAF50">275</b> <br>
+V: <b class="fs17" style="color: #2196F3">960</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my14Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>SAN ANDRES</h5>
+<h6>
+T: <b class="fs17">2189</b>, D: <b class="fs17" style="color: #4CAF50">266</b> <br>
+V: <b class="fs17" style="color: #2196F3">1923</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my15Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>LUGO</h5>
+<h6>
+T: <b class="fs17">514</b>, D: <b class="fs17" style="color: #4CAF50">187</b> <br>
+V: <b class="fs17" style="color: #2196F3">326</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my16Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>URBAN RESIDENCIAL</h5>
+<h6>
+T: <b class="fs17">685</b>, D: <b class="fs17" style="color: #4CAF50">147</b> <br>
+V: <b class="fs17" style="color: #2196F3">5</b>, S: <b class="fs17" style="color: #FFC107">424</b>, B : <b class="fs17" style="color: #F44336">108</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my17Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>ORENSE</h5>
+<h6>
+T: <b class="fs17">511</b>, D: <b class="fs17" style="color: #4CAF50">124</b> <br>
+V: <b class="fs17" style="color: #2196F3">387</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my18Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>PRAGA VILLAGE</h5>
+<h6>
+T: <b class="fs17">293</b>, D: <b class="fs17" style="color: #4CAF50">84</b> <br>
+V: <b class="fs17" style="color: #2196F3">209</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my19Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>LAGOON VILLAGE</h5>
+<h6>
+T: <b class="fs17">685</b>, D: <b class="fs17" style="color: #4CAF50">55</b> <br>
+V: <b class="fs17" style="color: #2196F3">630</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my20Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>RIVERA DEL CAMPO </h5>
+<h6>
+T: <b class="fs17">40</b>, D: <b class="fs17" style="color: #4CAF50">1</b> <br>
+V: <b class="fs17" style="color: #2196F3">38</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my21Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>FINCA MONTECARLO</h5>
+<h6>
+T: <b class="fs17">487</b>, D: <b class="fs17" style="color: #4CAF50">0</b> <br>
+V: <b class="fs17" style="color: #2196F3">487</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my22Chart"></canvas>
+</div>
+</div>
+</div>
+<div class="grafico">
+<div class="wrapper">
+<div class="title text-center mb-5 tituloh1">
+<h5>GROCIO PRADO</h5>
+<h6>
+T: <b class="fs17">114</b>, D: <b class="fs17" style="color: #4CAF50">0</b> <br>
+V: <b class="fs17" style="color: #2196F3">114</b>, S: <b class="fs17" style="color: #FFC107">0</b>, B : <b class="fs17" style="color: #F44336">0</b>
+</h6>
+</div>
+<div class="chart-wrapper text-center">
+<canvas id="my23Chart"></canvas>
+</div>
+</div>
+</div>
+ </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+ <script>
+ let colorHex = ["#4CAF50", "#2196F3", "#FFC107", "#F44336"];
+ let ctx1 = document.getElementById("my1Chart").getContext("2d")
+let labels1 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart1 = new Chart(ctx1, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [2517,937,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels1,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx2 = document.getElementById("my2Chart").getContext("2d")
+let labels2 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart2 = new Chart(ctx2, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [1735,987,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels2,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx3 = document.getElementById("my3Chart").getContext("2d")
+let labels3 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart3 = new Chart(ctx3, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [1569,202,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels3,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx4 = document.getElementById("my4Chart").getContext("2d")
+let labels4 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart4 = new Chart(ctx4, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [1296,605,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels4,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx5 = document.getElementById("my5Chart").getContext("2d")
+let labels5 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart5 = new Chart(ctx5, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [816,1366,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels5,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx6 = document.getElementById("my6Chart").getContext("2d")
+let labels6 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart6 = new Chart(ctx6, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [745,1286,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels6,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx7 = document.getElementById("my7Chart").getContext("2d")
+let labels7 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart7 = new Chart(ctx7, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [532,286,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels7,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx8 = document.getElementById("my8Chart").getContext("2d")
+let labels8 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart8 = new Chart(ctx8, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [498,2,5,83,],
+backgroundColor: colorHex,
+},
+],
+labels: labels8,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx9 = document.getElementById("my9Chart").getContext("2d")
+let labels9 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart9 = new Chart(ctx9, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [496,1,23,84,],
+backgroundColor: colorHex,
+},
+],
+labels: labels9,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx10 = document.getElementById("my10Chart").getContext("2d")
+let labels10 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart10 = new Chart(ctx10, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [469,2,0,109,],
+backgroundColor: colorHex,
+},
+],
+labels: labels10,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx11 = document.getElementById("my11Chart").getContext("2d")
+let labels11 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart11 = new Chart(ctx11, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [424,0,0,74,],
+backgroundColor: colorHex,
+},
+],
+labels: labels11,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx12 = document.getElementById("my12Chart").getContext("2d")
+let labels12 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart12 = new Chart(ctx12, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [410,0,0,65,],
+backgroundColor: colorHex,
+},
+],
+labels: labels12,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx13 = document.getElementById("my13Chart").getContext("2d")
+let labels13 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart13 = new Chart(ctx13, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [306,94,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels13,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx14 = document.getElementById("my14Chart").getContext("2d")
+let labels14 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart14 = new Chart(ctx14, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [275,960,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels14,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx15 = document.getElementById("my15Chart").getContext("2d")
+let labels15 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart15 = new Chart(ctx15, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [266,1923,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels15,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx16 = document.getElementById("my16Chart").getContext("2d")
+let labels16 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart16 = new Chart(ctx16, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [187,326,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels16,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx17 = document.getElementById("my17Chart").getContext("2d")
+let labels17 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart17 = new Chart(ctx17, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [147,5,424,108,],
+backgroundColor: colorHex,
+},
+],
+labels: labels17,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx18 = document.getElementById("my18Chart").getContext("2d")
+let labels18 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart18 = new Chart(ctx18, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [124,387,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels18,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx19 = document.getElementById("my19Chart").getContext("2d")
+let labels19 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart19 = new Chart(ctx19, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [84,209,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels19,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx20 = document.getElementById("my20Chart").getContext("2d")
+let labels20 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart20 = new Chart(ctx20, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [55,630,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels20,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx21 = document.getElementById("my21Chart").getContext("2d")
+let labels21 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart21 = new Chart(ctx21, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [1,38,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels21,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx22 = document.getElementById("my22Chart").getContext("2d")
+let labels22 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart22 = new Chart(ctx22, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [0,487,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels22,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+let ctx23 = document.getElementById("my23Chart").getContext("2d")
+let labels23 = ["Disponible","Vendido","Separado","Bloqueado"]
+let myChart23 = new Chart(ctx23, {
+type: "pie",
+data: {
+datasets: [
+{
+data: [0,114,0,0,],
+backgroundColor: colorHex,
+},
+],
+labels: labels23,
+},
+options: {
+responsive: true,
+legend: {
+display: false,
+},
+plugins: {
+datalabels: {
+color: "#fff",
+anchor: "end",
+align: "start",
+offset: -10,
+borderWidth: 2,
+borderColor: "#fff",
+borderRadius: 25,
+backgroundColor: (context) => {
+return context.dataset.backgroundColor
+},
+font: {
+weight: "bold",
+size: "10",
+},
+formatter: (value) => {
+return value + " %"
+},
+},
+},
+},
+})
+ </script>
+ </body>
+</html>
